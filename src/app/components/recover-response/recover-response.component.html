@@ -1,0 +1,19 @@
+<h2>Student Responses</h2>
+<table>
+    <thead>
+        <th>UserTestID</th>
+        <th>Forename</th>
+        <th>Surname</th>
+        <th colspan="2">Response</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let response of responses | keyvalue">
+            <td>{{response.value.userTestID}}</td>
+            <td>{{response.value.forename}}</td>
+            <td>{{response.value.surname}}</td>
+            <td><button (click)="viewResponse(response.key)">View Response</button></td>
+            <td><button (click)="clearResponse(response.key)">Remove Response</button></td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="clearAll()">Remove All</button>

@@ -1,0 +1,15 @@
+<h2>Student Response</h2>
+<p>{{forename}} {{surname}}</p>
+<table>
+    <thead>
+        <th>Question</th>
+        <th>Answer</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of mockResponseData">
+            <td>{{row.questionID}}</td>
+            <td>{{row.response}}</td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="storeResponse()">Save Response</button>

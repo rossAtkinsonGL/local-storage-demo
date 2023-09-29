@@ -1,0 +1,13 @@
+<nav style="margin-bottom: 1rem;">
+  <ng-container *ngIf="!loggedIn">
+    <a routerLink="/StudentLogin">Student Login</a>
+    <a routerLink="/UserLogin"> | User Login</a>
+  </ng-container>
+  <ng-container *ngIf="loggedIn && !viewingResponseDetails">
+    <a routerLink="/StudentLogin">Logout</a>
+  </ng-container>
+  <ng-container *ngIf="viewingResponseDetails">
+    <a routerLink="/RecoverResponse">Back</a>
+  </ng-container>
+</nav>
+<router-outlet></router-outlet>

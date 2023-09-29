@@ -1,0 +1,14 @@
+<h2>Student Response</h2>
+<p>{{response!.forename}} {{response!.surname}}</p>
+<table>
+    <thead>
+        <th>Question</th>
+        <th>Answer</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of response!.response">
+            <td>{{row.questionID}}</td>
+            <td>{{row.response}}</td>
+        </tr>
+    </tbody>
+</table>

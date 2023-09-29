@@ -1,0 +1,6 @@
+<h2>Student Login</h2>
+<form>
+    <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" maxlength="50" placeholder="Enter username" />
+    <input type="text" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" maxlength="50" placeholder="Enter password" />
+    <input class="loginInput" (click)="login()" type="submit" value="Login">
+</form>
