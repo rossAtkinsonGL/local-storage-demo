@@ -9,6 +9,7 @@ import { RecoverResponseComponent } from './components/recover-response/recover-
 import { AppComponent } from './app.component';
 import { ResponseDetailComponent } from './components/response-detail/response-detail.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { DisableContextMenuDirective } from './directives/disable-context-menu.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     UserLoginComponent,
     RecoverResponseComponent,
     AppComponent,
-    ResponseDetailComponent
+    ResponseDetailComponent,    
+    DisableContextMenuDirective
   ],
   imports: [
     BrowserModule,
