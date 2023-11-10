@@ -3,10 +3,12 @@
   "short_name": "local-storage-demo",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
-  "display_override": ["fullscreen"],
   "display": "fullscreen",
+  "display_override": [
+    "fullscreen"
+  ],
   "scope": "./",
-  "start_url": "./",
+  "start_url": "index.html",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",

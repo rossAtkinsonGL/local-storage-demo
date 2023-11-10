@@ -44,5 +44,6 @@ export class LoginService {
   logout(): void {
     this.loggedIn$.next(false);
     this.currentStudent$.next({} as IStudent);
+    document.exitFullscreen();
   }
 }

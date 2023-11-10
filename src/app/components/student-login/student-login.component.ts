@@ -16,5 +16,6 @@ export class StudentLoginComponent {
   login() {
     this.loginService.studentLogin(this.username, this.password);
     this.router.navigate(['/StoreResponse']);
+    document.body.requestFullscreen({ navigationUI: 'hide' });
   }
 }

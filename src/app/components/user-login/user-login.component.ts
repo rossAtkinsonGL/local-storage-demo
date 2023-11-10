@@ -16,5 +16,6 @@ export class UserLoginComponent {
   login() {
     this.loginService.userLogin(this.username, this.password);
     this.router.navigate(['/RecoverResponse']);
+    document.body.requestFullscreen({ navigationUI: 'hide' });
   }
 }

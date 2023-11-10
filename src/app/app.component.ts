@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { LoginService } from './services/login.service';
 import { Subject, takeUntil } from 'rxjs';
 import { RecoverResponseService } from './services/recover-response.service';
@@ -17,6 +17,7 @@ export class AppComponent implements OnDestroy {
     this.loginService.loggedIn$.pipe(takeUntil(this.destroyed)).subscribe(val => this.loggedIn = val);
     this.recoverResponseService.viewingResponseDetails$.pipe(takeUntil(this.destroyed)).subscribe(val => this.viewingResponseDetails = val);
   }
+
   ngOnDestroy(): void {
     this.destroyed.next();
     this.destroyed.complete();
